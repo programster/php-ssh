@@ -75,6 +75,16 @@ class Session extends AbstractResourceHolder
     }
 
     /**
+     * REturns the Scp subsystem
+     * 
+     * @return Scp
+     */
+    public function getScp()
+    {
+        return $this->getSubsystem('Scp');
+    }
+
+    /**
      * Returns the specified subsystem
      *
      * If the subsystem does not exists, it will create it
@@ -111,6 +121,9 @@ class Session extends AbstractResourceHolder
                 break;
             case 'exec':
                 $subsystem = new Exec($this);
+                break;
+            case 'scp':
+                $subsystem = new Scp($this);
                 break;
             default:
                 throw new InvalidArgumentException(sprintf('The subsystem \'%s\' is not supported.', $name));
