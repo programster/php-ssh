@@ -1,5 +1,5 @@
 {
-    "name":         "herzult/php-ssh",
+    "name":         "programster/php-ssh",
     "type":         "library",
     "description":  "Provides an object-oriented wrapper for the php ssh2 extension.",
     "keywords":     ["ssh", "ssh2"],
@@ -12,6 +12,10 @@
         {
             "name":     "The contributors",
             "homepage": "http://github.com/Herzult/php-ssh/contributors"
+        },
+        {
+            "name":     "Programster",
+            "homepage": "blog.programster.org"
         }
     ],
     "require": {
